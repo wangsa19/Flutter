@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,20 +12,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(
+          leading: const Icon(
             Icons.adb,
             color: Colors.white,
           ),
-          title: Text(
+          title: const Text(
             "Appbar Example",
             style: TextStyle(color: Colors.white),
           ),
           actions: <Widget>[
-            IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app))
+            IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.exit_to_app))
           ],
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Color(0xff0096ff), Color(0xff6610f2)],
                 begin: FractionalOffset.topLeft,

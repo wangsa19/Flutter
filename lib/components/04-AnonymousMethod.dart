@@ -19,7 +19,7 @@
       return MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Anonymous Method"),
+            title: const Text("Anonymous Method"),
           ),
           body: Center(
             child: Column(
@@ -32,7 +32,7 @@
                         message = "button has been pressed";
                       });
                     },
-                    child: Text("Press the Button"))
+                    child: const Text("Press the Button"))
               ],
             ),
           ),

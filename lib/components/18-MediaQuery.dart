@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: MainPage(),
     );
   }
@@ -22,7 +22,7 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Latihan Media Query"),
+        title: const Text("Latihan Media Query"),
       ),
       body: (MediaQuery.of(context).orientation == Orientation.portrait)
           ? Column(

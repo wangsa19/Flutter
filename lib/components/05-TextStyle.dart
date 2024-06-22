@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Text Style"),
+          title: const Text("Latihan Text Style"),
         ),
-        body: Center(
+        body: const Center(
           child: Text(
             "This is Text",
             style: TextStyle(

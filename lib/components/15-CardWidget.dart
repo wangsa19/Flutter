@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green,
         body: Container(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           child: ListView(
             children: <Widget>[
               BuildCard(Icons.account_box, "Account Box"),
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: Icon(
                 iconData,
                 color: Colors.green,

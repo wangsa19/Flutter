@@ -20,14 +20,14 @@ class _RegisterPageState extends State<RegisterPage> {
       body: ListView(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   "Register Page",
                   style: TextStyle(
                     fontSize: 36,
@@ -35,24 +35,24 @@ class _RegisterPageState extends State<RegisterPage> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                Image(
+                const Image(
                   image: AssetImage("assets/SignUp-rafiki.png"),
                   fit: BoxFit.contain,
                   width: 300.0,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 buildTextfield(Icons.people, "Name", nameController),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 buildTextfield(Icons.person, "username", usernameController),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 buildTextfield(Icons.lock, "password", passwordController),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ElevatedButton(
@@ -62,16 +62,16 @@ class _RegisterPageState extends State<RegisterPage> {
                     backgroundColor: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
-                      side: BorderSide(
+                      side: const BorderSide(
                         color: Colors.black,
                         style: BorderStyle.solid,
                         width: 2,
                         strokeAlign: BorderSide.strokeAlignCenter,
                       ),
                     ),
-                    minimumSize: Size(340, 60),
+                    minimumSize: const Size(340, 60),
                   ),
-                  child: Text(
+                  child: const Text(
                     "Register",
                     style: TextStyle(
                       fontFamily: "inter",
@@ -81,13 +81,13 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "Do you have an account?",
                       style: TextStyle(
                         fontSize: 16,
@@ -95,11 +95,11 @@ class _RegisterPageState extends State<RegisterPage> {
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     TextButton(
-                      child: Text(
+                      child: const Text(
                         "Login",
                         style: TextStyle(
                           color: Colors.red,
@@ -110,7 +110,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return LoginPage();
+                          return const LoginPage();
                         }));
                       },
                     ),
@@ -139,13 +139,13 @@ class _RegisterPageState extends State<RegisterPage> {
       controller: controller,
       decoration: InputDecoration(
         labelText: text,
-        labelStyle: TextStyle(color: Colors.black),
-        hintText: 'Input your ' + text,
-        hintStyle: TextStyle(color: Colors.grey),
+        labelStyle: const TextStyle(color: Colors.black),
+        hintText: 'Input your $text',
+        hintStyle: const TextStyle(color: Colors.grey),
         prefixIcon: Icon(iconData),
         suffixIcon: controller.text.isNotEmpty
             ? IconButton(
-                icon: Icon(Icons.clear),
+                icon: const Icon(Icons.clear),
                 onPressed: () {
                   controller.clear();
                   setState(() {});
@@ -153,14 +153,14 @@ class _RegisterPageState extends State<RegisterPage> {
               )
             : null,
         enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.black, width: 2.0),
+            borderSide: const BorderSide(color: Colors.black, width: 2.0),
             borderRadius: BorderRadius.circular(10)),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black, width: 2.0),
+          borderSide: const BorderSide(color: Colors.black, width: 2.0),
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      style: TextStyle(color: Colors.black, fontSize: 18.0),
+      style: const TextStyle(color: Colors.black, fontSize: 18.0),
     );
   }
 }

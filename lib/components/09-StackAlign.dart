@@ -1,8 +1,5 @@
-import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Stack dan Align"),
+          title: const Text("Latihan Stack dan Align"),
         ),
         body: Stack(
           children: <Widget>[
@@ -67,71 +64,71 @@ class MyApp extends StatelessWidget {
                 Column(
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(10),
-                      child: Text(
+                      margin: const EdgeInsets.all(10),
+                      child: const Text(
                         "Ini adalah text yang ada di lapisan tengah dari Stack.",
                         style: TextStyle(fontSize: 30),
                       ),
@@ -142,21 +139,17 @@ class MyApp extends StatelessWidget {
             ),
             // button ditengah bawah
             Align(
-              alignment: Alignment(0, 0),
+              alignment: const Alignment(0, 0),
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text(
-                  "+",
-                  style: TextStyle(color: Colors.white),
-                ),
                 style: ElevatedButton.styleFrom(
                   backgroundColor:
                       Colors.amber, // Mengatur warna latar belakang
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 20,
                   ), // Padding di dalam tombol
-                  textStyle: TextStyle(
+                  textStyle: const TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ), // Gaya teks
@@ -164,6 +157,10 @@ class MyApp extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   elevation: 5,
+                ),
+                child: const Text(
+                  "+",
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),

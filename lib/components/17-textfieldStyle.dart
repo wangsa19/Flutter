@@ -19,38 +19,38 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Text Field"),
+          title: const Text("Latihan Text Field"),
         ),
         body: Container(
-          margin: EdgeInsets.all(20),
+          margin: const EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const Text(
                 "Text Field",
                 style: TextStyle(
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               TextField(
                 decoration: InputDecoration(
                     // icon: Icon(Icons.adb),
-                    prefixIcon: Icon(Icons.person),
+                    prefixIcon: const Icon(Icons.person),
                     labelText: "Nama lengkap",
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 1.5,
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 1.5,
                       ),
@@ -61,23 +61,23 @@ class _MyAppState extends State<MyApp> {
                 },
                 controller: controller,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               TextField(
                 decoration: InputDecoration(
-                    icon: Icon(Icons.person),
+                    icon: const Icon(Icons.person),
                     labelText: "Nama lengkap",
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 1.5,
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 1.5,
                       ),
@@ -88,23 +88,23 @@ class _MyAppState extends State<MyApp> {
                 },
                 controller: controller,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               TextField(
                 decoration: InputDecoration(
-                    suffixIcon: Icon(Icons.person),
+                    suffixIcon: const Icon(Icons.person),
                     labelText: "Nama lengkap",
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 1.5,
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 1.5,
                       ),

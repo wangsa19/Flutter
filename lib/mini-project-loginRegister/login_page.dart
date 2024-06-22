@@ -20,14 +20,14 @@ class _LoginPageState extends State<LoginPage> {
       body: ListView(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   "Login Page",
                   style: TextStyle(
                     fontSize: 36,
@@ -35,22 +35,22 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                Image(
+                const Image(
                   image: AssetImage("assets/Login-bro.png"),
                   fit: BoxFit.cover,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 buildTextfield(Icons.person, "username", usernameController),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 buildTextfield(Icons.lock, "password", passwordController),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Row(
+                const Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Icon(Icons.check_box_outline_blank),
@@ -64,14 +64,14 @@ class _LoginPageState extends State<LoginPage> {
                     Text("Forget Password?"),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) {
-                      return MainPage();
+                      return const MainPage();
                     }));
                   },
                   style: ElevatedButton.styleFrom(
@@ -79,16 +79,16 @@ class _LoginPageState extends State<LoginPage> {
                     backgroundColor: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
-                      side: BorderSide(
+                      side: const BorderSide(
                         color: Colors.black,
                         style: BorderStyle.solid,
                         width: 2,
                         strokeAlign: BorderSide.strokeAlignCenter,
                       ),
                     ),
-                    minimumSize: Size(340, 60),
+                    minimumSize: const Size(340, 60),
                   ),
-                  child: Text(
+                  child: const Text(
                     "Login",
                     style: TextStyle(
                       fontFamily: "inter",
@@ -98,13 +98,13 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "Don't have an account?",
                       style: TextStyle(
                         fontSize: 16,
@@ -112,11 +112,11 @@ class _LoginPageState extends State<LoginPage> {
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 15,
                     ),
                     TextButton(
-                      child: Text(
+                      child: const Text(
                         "Register",
                         style: TextStyle(
                           color: Colors.red,
@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return RegisterPage();
+                          return const RegisterPage();
                         }));
                       },
                     ),
@@ -156,13 +156,13 @@ class _LoginPageState extends State<LoginPage> {
       controller: controller,
       decoration: InputDecoration(
         labelText: text,
-        labelStyle: TextStyle(color: Colors.black),
-        hintText: 'Input your ' + text,
-        hintStyle: TextStyle(color: Colors.grey),
+        labelStyle: const TextStyle(color: Colors.black),
+        hintText: 'Input your $text',
+        hintStyle: const TextStyle(color: Colors.grey),
         prefixIcon: Icon(iconData),
         suffixIcon: controller.text.isNotEmpty
             ? IconButton(
-                icon: Icon(Icons.clear),
+                icon: const Icon(Icons.clear),
                 onPressed: () {
                   controller.clear();
                   setState(() {});
@@ -170,14 +170,14 @@ class _LoginPageState extends State<LoginPage> {
               )
             : null,
         enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.black, width: 2.0),
+            borderSide: const BorderSide(color: Colors.black, width: 2.0),
             borderRadius: BorderRadius.circular(10)),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black, width: 2.0),
+          borderSide: const BorderSide(color: Colors.black, width: 2.0),
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      style: TextStyle(color: Colors.black, fontSize: 18.0),
+      style: const TextStyle(color: Colors.black, fontSize: 18.0),
     );
   }
 }

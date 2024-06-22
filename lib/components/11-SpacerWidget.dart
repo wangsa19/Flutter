@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Spacer Widget"),
+          title: const Text("Spacer Widget"),
         ),
         body: Center(
           child: Row(
             // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Spacer(
+              const Spacer(
                 flex: 1,
               ),
               Container(
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                 height: 80,
                 color: Colors.red,
               ),
-              Spacer(
+              const Spacer(
                 flex: 2,
               ),
               Container(
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                 height: 80,
                 color: Colors.green,
               ),
-              Spacer(
+              const Spacer(
                 flex: 3,
               ),
               Container(
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                 height: 80,
                 color: Colors.blue,
               ),
-              Spacer(
+              const Spacer(
                 flex: 2,
               ),
             ],

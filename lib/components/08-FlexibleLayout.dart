@@ -1,7 +1,5 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flexible layout"),
+          title: const Text("Flexible layout"),
         ),
         body: Column(
           children: <Widget>[
@@ -26,21 +24,21 @@ class MyApp extends StatelessWidget {
                     Flexible(
                       flex: 1,
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         color: Colors.red,
                       ),
                     ),
                     Flexible(
                       flex: 1,
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         color: Colors.green,
                       ),
                     ),
                     Flexible(
                       flex: 1,
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         color: Colors.purple,
                       ),
                     ),
@@ -49,13 +47,13 @@ class MyApp extends StatelessWidget {
             Flexible(
                 flex: 2,
                 child: Container(
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                   color: Colors.amber,
                 )),
             Flexible(
                 flex: 1,
                 child: Container(
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                   color: Colors.blue,
                 )),
           ],

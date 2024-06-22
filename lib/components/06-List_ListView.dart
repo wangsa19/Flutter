@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan ListView"),
+          title: const Text("Latihan ListView"),
         ),
         body: ListView(
           children: <Widget>[
@@ -28,18 +28,18 @@ class _MyAppState extends State<MyApp> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 ElevatedButton(
-                    child: Text("Tambah Data"),
+                    child: const Text("Tambah Data"),
                     onPressed: () {
                       setState(() {
                         widgets.add(Text(
-                          "Data ke-" + counter.toString(),
-                          style: TextStyle(fontSize: 35),
+                          "Data ke-$counter",
+                          style: const TextStyle(fontSize: 35),
                         ));
                         counter++;
                       });
                     }),
                 ElevatedButton(
-                  child: Text("Hapus Data"),
+                  child: const Text("Hapus Data"),
                   onPressed: () {
                     setState(() {
                       widgets.removeLast();

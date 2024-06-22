@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +22,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Dragable"),
+          title: const Text("Latihan Dragable"),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -33,16 +32,7 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 Draggable<Color>(
                   data: color1,
-                  child: SizedBox(
-                    width: 50,
-                    height: 50,
-                    child: Material(
-                      color: color1,
-                      shape: StadiumBorder(),
-                      elevation: 3,
-                    ),
-                  ),
-                  childWhenDragging: SizedBox(
+                  childWhenDragging: const SizedBox(
                     width: 50,
                     height: 50,
                     child: Material(
@@ -56,23 +46,23 @@ class _MyAppState extends State<MyApp> {
                     height: 50,
                     child: Material(
                       color: color1.withOpacity(0.7),
-                      shape: StadiumBorder(),
+                      shape: const StadiumBorder(),
+                      elevation: 3,
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: 50,
+                    height: 50,
+                    child: Material(
+                      color: color1,
+                      shape: const StadiumBorder(),
                       elevation: 3,
                     ),
                   ),
                 ),
                 Draggable<Color>(
                   data: color2,
-                  child: SizedBox(
-                    width: 50,
-                    height: 50,
-                    child: Material(
-                      color: color2,
-                      shape: StadiumBorder(),
-                      elevation: 3,
-                    ),
-                  ),
-                  childWhenDragging: SizedBox(
+                  childWhenDragging: const SizedBox(
                     width: 50,
                     height: 50,
                     child: Material(
@@ -86,7 +76,16 @@ class _MyAppState extends State<MyApp> {
                     height: 50,
                     child: Material(
                       color: color2.withOpacity(0.7),
-                      shape: StadiumBorder(),
+                      shape: const StadiumBorder(),
+                      elevation: 3,
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: 50,
+                    height: 50,
+                    child: Material(
+                      color: color2,
+                      shape: const StadiumBorder(),
                       elevation: 3,
                     ),
                   ),
@@ -94,10 +93,10 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
             DragTarget<Color>(
-              onWillAccept: (value) => true,
-              onAccept: (value) {
+              onWillAcceptWithDetails: (value) => true,
+              onAcceptWithDetails: (value) {
                 isAccepted = true;
-                targetColor = value;
+                targetColor = value.data;
               },
               builder: (context, candidates, rejected) {
                 return (isAccepted)
@@ -106,10 +105,10 @@ class _MyAppState extends State<MyApp> {
                         height: 100,
                         child: Material(
                           color: targetColor,
-                          shape: StadiumBorder(),
+                          shape: const StadiumBorder(),
                         ),
                       )
-                    : SizedBox(
+                    : const SizedBox(
                         width: 100,
                         height: 100,
                         child: Material(

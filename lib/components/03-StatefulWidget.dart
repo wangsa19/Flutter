@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Stateful Widget Demo"),
+          title: const Text("Stateful Widget Demo"),
         ),
         body: Center(
           child: Column(
@@ -35,8 +35,8 @@ class _MyAppState extends State<MyApp> {
                 style: TextStyle(fontSize: 10 + number.toDouble()),
               ),
               ElevatedButton(
-                child: Text("Click Button now"),
                 onPressed: tekanTombol,
+                child: const Text("Click Button now"),
               )
             ],
           ),

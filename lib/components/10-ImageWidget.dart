@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Image"),
+          title: const Text("Latihan Image"),
         ),
         body: Center(
           child: Container(
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             // padding: EdgeInsets.all(3),
-            child: Image(
+            child: const Image(
               image: AssetImage("assets/mountain.jpg"),
               fit: BoxFit.cover,
               repeat: ImageRepeat.noRepeat,

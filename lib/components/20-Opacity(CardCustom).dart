@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: HomePage(),
     );
   }
@@ -22,16 +22,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Custom Card Example",
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Color(0xFF8C062F),
+        backgroundColor: const Color(0xFF8C062F),
       ),
       body: Stack(
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 gradient: LinearGradient(
               colors: [Color(0xFFFE5788), Color(0xFFF56D5D)],
               begin: Alignment.topCenter,
@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: NetworkImage(
                                 "https://toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png"),
                             fit: BoxFit.cover,
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Container(
                       height: MediaQuery.of(context).size.height * 0.35,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(15),
                           topRight: Radius.circular(15),
@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
                       child: Center(
                         child: Column(
                           children: <Widget>[
-                            Text(
+                            const Text(
                               "Beautiful Sunset at Paddy Field",
                               maxLines: 2,
                               textAlign: TextAlign.center,
@@ -93,8 +93,8 @@ class HomePage extends StatelessWidget {
                                   color: Color(0xFFF56D5D), fontSize: 30),
                             ),
                             Container(
-                              margin: EdgeInsets.fromLTRB(0, 20, 0, 15),
-                              child: Row(
+                              margin: const EdgeInsets.fromLTRB(0, 20, 0, 15),
+                              child: const Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   Text(
@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Row(
+                            const Row(
                               children: <Widget>[
                                 Spacer(flex: 10),
                                 Icon(

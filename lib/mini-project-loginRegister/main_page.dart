@@ -8,14 +8,14 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Main Page"),
+        title: const Text("Main Page"),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.logout),
+            icon: const Icon(Icons.logout),
             onPressed: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
-                return LoginPage();
+                return const LoginPage();
               }));
             },
           ),
@@ -23,8 +23,8 @@ class MainPage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          margin: EdgeInsets.all(20),
-          child: Column(  
+          margin: const EdgeInsets.all(20),
+          child: const Column(  
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image(image: AssetImage("assets/Welcome-amico.png")),

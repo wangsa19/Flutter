@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Latihan Membuat Button"),
+          title: const Text("Latihan Membuat Button"),
         ),
         body: Center(
           child: Column(
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {},
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.amber)),
-                child: Text('Elevates button'),
+                child: const Text('Elevates button'),
               ),
               Material(
                 elevation: 2,
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                   height: 40,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [Colors.blue, Colors.pink],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
                       splashColor: Colors.amber,
                       borderRadius: BorderRadius.circular(20),
                       onTap: () {},
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "My Button",
                           style: TextStyle(
