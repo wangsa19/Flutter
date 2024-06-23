@@ -9,14 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey,
         body: Center(
           child: QrImageView(
             data: "https://google.com",
             version: 6,
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.grey,
             foregroundColor: Colors.black,
             errorCorrectionLevel: QrErrorCorrectLevel.M,
             padding: EdgeInsets.all(30),

@@ -207,7 +207,7 @@ class MainPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
@@ -217,6 +217,9 @@ class MainPage extends StatelessWidget {
                         fontSize: 11,
                         fontWeight: FontWeight.w500,
                       ),
+                    ),
+                    SizedBox(
+                      width: 10,
                     ),
                     Text(
                       "SIGN UP",
