@@ -24,10 +24,10 @@ class MainPage extends StatelessWidget {
       body: Center(
         child: Container(
           margin: const EdgeInsets.all(20),
-          child: const Column(  
+          child: const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image(image: AssetImage("assets/Welcome-amico.png")),
+              Image(image: AssetImage("assets/image/Welcome-amico.png")),
               Text(
                 "Selamat Datang, Dewangga Wahyu",
                 textAlign: TextAlign.center,

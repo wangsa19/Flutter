@@ -36,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
                 const Image(
-                  image: AssetImage("assets/SignUp-rafiki.png"),
+                  image: AssetImage("assets/image/SignUp-rafiki.png"),
                   fit: BoxFit.contain,
                   width: 300.0,
                 ),
@@ -69,7 +69,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         strokeAlign: BorderSide.strokeAlignCenter,
                       ),
                     ),
-                    minimumSize: const Size(340, 60),
+                    minimumSize: const Size(365, 65),
                   ),
                   child: const Text(
                     "Register",

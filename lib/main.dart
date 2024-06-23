@@ -1,29 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'package:flutter_app/mini-project-loginRegister/login_page.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.grey,
-        body: Center(
-          child: QrImageView(
-            data: "https://google.com",
-            version: 6,
-            backgroundColor: Colors.white,
-            foregroundColor: Colors.black,
-            errorCorrectionLevel: QrErrorCorrectLevel.M,
-            padding: EdgeInsets.all(30),
-            size: 300,
-          ),
-        ),
-      ),
+      home: LoginPage(),
     );
   }
 }

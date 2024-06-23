@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const Image(
-                  image: AssetImage("assets/Login-bro.png"),
+                  image: AssetImage("assets/image/Login-bro.png"),
                   fit: BoxFit.cover,
                 ),
                 const SizedBox(
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                         strokeAlign: BorderSide.strokeAlignCenter,
                       ),
                     ),
-                    minimumSize: const Size(340, 60),
+                    minimumSize: const Size(365, 65),
                   ),
                   child: const Text(
                     "Login",
